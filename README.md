@@ -10,7 +10,7 @@ This project demonstrates a modern microservices-based e-commerce backend, where
 ### Key Features:
 - **JWT authentication** for secure user access.
 - **Decoupled services** communicating via REST APIs (synchronous) and RabbitMQ (asynchronous).
-- **Containerized** with Docker for easy deployment.
+- **Containerized** with Docker for easy deployment. (###To be done)
 - **MongoDB** for flexible NoSQL data storage.
 
 ## 🛠️ Tech Stack
@@ -31,7 +31,7 @@ ecommerce-microservices/
 ├── user-service/         # Handles user registration/auth (JWT)  
 ├── order-service/        # Processes orders and publishes events  
 ├── notification-service/ # Listens to events (e.g., sends emails)  
-├── docker-compose.yml    # Orchestrates all services + dependencies  
+├── docker-compose.yml    # Orchestrates all services + dependencies  (To be Added)
 └── .gitignore            # Excludes venv, IDE files, etc.  
 ```
 
@@ -95,9 +95,6 @@ docker-compose up --build
 - **Modularity:** Services can be developed/deployed independently.
 - **Resilience:** Failure in one service (e.g., notifications) doesn’t crash the entire system.
 - **Performance:** Async messaging (RabbitMQ) offloads slow tasks (e.g., sending emails).
-
-## 📜 License
-MIT
 
 ## 🎯 Ideal For
 - Learning microservices, Docker, and async communication.
